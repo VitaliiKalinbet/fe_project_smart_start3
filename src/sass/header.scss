@@ -1,7 +1,287 @@
+.header{
+    padding-top: 21px;
+    width: 320px;
+    height: 568px;
+    background-image: url(../images/header_1img.png);
+    position: relative;
+    margin-bottom: 173px;
+}
+.header__navigation {
+    background-color: $white;
+    width: 320px;
+    height: 80px;
+}
+.header__item1 {
+    color: $maincolor;
+    font-family: 'Raleway-Light', sans-serif;
+    font-size: 25px;
+    margin-top: -6px;
+}
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 31px 15px 31px 15px;
+    width: 320px;
+}
+.header__item--text {
+    display: none;
+}
+body {
+    width: 320px;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: $maincolor;
+}
+.header__item2 {
+    position: relative;
+}
+.header__burger {
+    width: 28px;
+    height: 19px;
+    margin-bottom: 31px;
+}
+a:active {
+    text-decoration: none;
+    color: $maincolor;
+}
+a:hover {
+    text-decoration: none;
+    color: $maincolor;
+}
+.header__item2:hover .burger {
+    display: none;
+}
+.header__hidden--menu {
+    display: none;
+    background-color: $white;
+    height: 467px;
+    width: 320px;
+    position: absolute;
+    left: -277px;
+    top: 49px;
+    padding-top: 30px;
+}
+.header__item2:hover .header__item--text {
+    display: block;
+}
+.header__item2:hover .header__item--text2 {
+    display: none;
+}
+.header__item2:hover .header__hidden--menu {
+    display: flex;
+    justify-content: center;
+}
+.header__item--text {
+    color: #969696;
+    font-family: 'Raleway-Light', sans-serif;
+}
+.header__hidden--item {
+    margin-bottom: 30px;
+}
+.header__item--text:hover {
+    color: #282629;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
 .header__title {
-    color: aqua;
-
-    &:hover{
-        color: red;
+    color: $white;
+    font-family: 'Raleway-Bold', sans-serif;
+    margin-bottom: 4px;
+}
+.header__subtitle {
+    color: $white;
+    font-family: 'OpenSans-SemiBold', sans-serif;
+    width: 187px;
+    margin-bottom: 31px; 
+}
+.header__section {
+    padding: 40px 15px;
+}
+.header__text2 {
+    display: inline-block;
+    color: $white;
+    font-family: 'OpenSans-Semibold', sans-serif;
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+.header__text2::before {
+    content: '>';
+    margin-right: 4px;
+    display: inline-block;
+    color: $white;
+    font-family: 'OpenSans-Semibold', sans-serif;
+}
+.header__button {
+    border: none;
+    background-color: $maincolor;
+    width: 211px;
+    height: 48px;
+    border-radius: 10px;
+    padding: 10px 40px 30px 20px;
+}
+.header__button--img {
+    display: inline-block;
+    width: 36px;
+    height: 24px;
+}
+.header__button--link {
+    display: inline-block;
+    color: $white;
+    font-family: 'OpenSans-Semibold', sans-serif;
+    font-size: 23px;
+    margin-left: 12px;
+}
+.header__button--link:hover {
+    color: $white;
+}
+.header__item--text2 {
+    display: none;
+}
+.iphones {
+    display: none;
+}
+@media (min-width: 768px) {
+    .header {
+        width: 768px;
+        background-image: url(../images/header_main2.png);
+    }
+    .header__navigation {
+        width: 768px;
+    }
+    .header__hidden--menu {
+        width: 768px;
+    }
+    body {
+        width: 768px;
+    }
+    .header__list {
+        width: 768px;
+    }
+    .header__burger {
+        display: none;
+    }
+    .header__hidden--item2 {
+        display: inline-block;
+        margin-left: 40px;
+    }
+    .header__item2:hover .header__hidden--menu {
+        display: none;
+    }
+    .header__title {
+        font-size: 40px;
+    }
+    .header__subtitle {
+        font-size: 20px;
+        width: 348px;
+    }
+    .iphones {
+        display: block;
+        position: relative;
+        right: 0;
+        top: -321px;
+    }
+    .iphone2 {
+        width: 318px;
+        height: 550px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .iphone1 {
+        width: 280px;
+        height: 444px;
+        position: absolute;
+        top: 63px;
+        right: 85px;
+        z-index: 2;
+    }
+    .header__item--text2 {
+        display: block;
+        color: #969696;
+        font-family: 'Raleway-Light', sans-serif;
+    }
+    .header__item--text2:hover {
+        color: #282629;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+    }
+    .header__item2:hover .header__item--text2 {
+        display: block;
+    }
+}
+@media (min-width: 1200px) {
+    .header {
+        width: 100vw;
+        background-image: url(../images/header_main3.png);
+    }
+    .header__navigation {
+        width: 100vw;
+    }
+    .header__hidden--menu {
+        width: 100vw;
+    }
+    body {
+        width: 100vw;
+    }
+    .header__list {
+        width: 100vw;
+    }
+    .header__burger {
+        display: none;
+    }
+    .header__hidden--item2 {
+        display: inline-block;
+        margin-left: 40px;
+    }
+    .header__item2:hover .header__hidden--menu {
+        display: none;
+    }
+    .header__title {
+        font-size: 40px;
+    }
+    .header__subtitle {
+        font-size: 20px;
+        width: 348px;
+    }
+    .iphones {
+        display: block;
+        position: relative;
+        right: 0;
+        top: -321px;
+    }
+    .iphone2 {
+        width: 318px;
+        height: 550px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .iphone1 {
+        width: 280px;
+        height: 444px;
+        position: absolute;
+        top: 63px;
+        right: 85px;
+        z-index: 2;
+    }
+    .header__item--text2 {
+        display: block;
+        color: #969696;
+        font-family: 'Raleway-Light', sans-serif;
+    }
+    .header__item--text2:hover {
+        color: #282629;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+    }
+    .header__item2:hover .header__item--text2 {
+        display: block;
     }
 }
