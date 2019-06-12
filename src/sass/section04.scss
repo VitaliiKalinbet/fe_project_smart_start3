@@ -1,7 +1,327 @@
-.section04__title {
-    color: aqua;
 
-    &:hover{
-        color: red;
+
+.section04{
+    width: 320px;
+    text-align: center;
+}
+
+.title{
+    
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+}
+
+.section04__title{
+    width:170px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: $maincolor;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 auto ;
+    
+}
+
+.add{
+
+        &::before{
+            content: "";
+            background-color: #babdc1;
+            display: block;
+            position: absolute;
+            left: 32px;
+            top: 5px;
+            width: 60px;
+            height: 1px;
+        }
+
+        &::after{
+            content: "";
+            background-color: #babdc1;
+            display: block;
+            position: absolute;
+            right: 32px;
+            top: 5px;
+            width: 60px;
+            height: 1px;
+        }
+}
+
+
+.slider{
+    width: 225px;
+    margin: 0 auto;
+    
+}
+
+.text{
+    position: relative;
+        
+        &::before{
+            content: '‘	‘';
+            letter-spacing: -30px;
+            line-height: 101px;
+            font-size: 150px;
+            opacity: 0.5;
+            color: #efefef;
+            position: absolute;
+            top: -16px;
+            left: -42px;
+
+        }
+}
+
+.text-1{
+    font-size: 16px;
+    font-family: 'OpenSans',sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color:#282528;
+    line-height: 26px;
+            
+}
+
+.slide img{
+    margin: 0 auto 31px; 
+
+}
+
+.name{
+    margin-bottom: 27px;
+
+}
+
+.name h2{
+    font-family: 'OpenSans',sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.name p{
+    font-family:'OpenSans',sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #646464;
+}
+
+input{
+    display:none;
+
+}
+
+label{
+    display: inline-block;
+}
+
+i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    background-color: #d4d3d4;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: $maincolor;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: .1s;
+        }
+}
+
+input[type="radio"]+i{
+    border-radius: 50%;
+}
+
+input:checked+i::before{
+    transform: scale(1);
+}
+
+.checkbox{
+    padding-bottom: 60px;
+}
+
+@media (min-width:768px) {
+
+    .section04{
+        width: 768px;
+        text-align: center;
     }
+    
+    .title{
+        
+        position: relative;
+        margin: 0 auto;
+        padding-bottom: 66px;
+    
+    }
+    
+    .section04__title{
+        width: 460px;
+        font-family: "Raleway",sans-serif;
+        font-weight: 700;
+        color: $maincolor;
+        font-size: 28px;
+        text-transform: uppercase;
+        margin: 0 auto ;
+        
+    }
+
+    .add{
+
+        &::before{
+            content: "";
+            background-color: #babdc1;
+            display: block;
+            position: absolute;
+            left: 94px;
+            top: 13px;
+            width: 60px;
+            height: 1px;
+        }
+
+        &::after{
+            content: "";
+            background-color: #babdc1;
+            display: block;
+            position: absolute;
+            right: 94px;
+            top: 13px;
+            width: 60px;
+            height: 1px;
+        }
+
+    }
+
+        .slider {
+            width: 576px;
+            margin: 0 auto;
+            
+        }
+        
+        .text{
+            width: 574px;
+            margin-bottom: 24px;
+
+            &::before{
+                position: absolute;
+                top: -13px;
+                left: -63px;
+    
+            }
+        }
+
+        .text-1{
+            font-size: 18px;
+            font-family: 'OpenSans',sans-serif;
+            font-weight: 400;
+            color:#282528;
+            line-height: 36px;
+            
+
+                &::after{
+                    content: 'nibh tempus,vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id';
+                    font-size: 18px;
+                    font-family: 'OpenSans',sans-serif;
+                    font-weight: 400;
+                    color:#282528;
+                    line-height: 36px;
+                }
+        }
+
+        .name{
+            margin-bottom: 66px;
+        
+        }
+    
+
+        .checkbox{
+            padding-bottom: 66px;
+        }
+
+}
+
+
+@media(min-width:1200px){
+    
+    .section04{
+        width: 1200px;
+        text-align: center;
+    }
+
+    .add{
+
+        &::before{
+            content: "";
+            background-color: #babdc1;
+            display: block;
+            position: absolute;
+            left: 307px;
+            top: 13px;
+            width: 60px;
+            height: 1px;
+        }
+
+        &::after{
+            content: "";
+            background-color: #babdc1;
+            display: block;
+            position: absolute;
+            right: 307px;
+            top: 13px;
+            width: 60px;
+            height: 1px;
+        }
+
+    }
+
+    .text{
+        width: 930px;
+        margin-bottom: 24px;
+
+            &::before{
+                position: absolute;
+                top: -12px;
+                left: -50px;
+
+            }
+    }
+
+    .slider {
+        width: 930px;
+        margin: 0 auto;
+        
+    }
+
+    .name{
+        margin-bottom: 113px;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
