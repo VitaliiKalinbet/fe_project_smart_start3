@@ -566,13 +566,13 @@ ul {
   opacity: 0.5;
   color: #efefef;
   position: absolute;
-  top: 10px;
-  left: 17px;
+  top: -12px;
+  left: -55px;
 }
 
 .section04__text-1 {
   font-size: 16px;
-  font-family: 'OpenSans',sans-serif;
+  font-family: 'OpenSans', sans-serif;
   font-weight: 400;
   margin-bottom: 20px;
   color: #282528;
@@ -589,13 +589,13 @@ ul {
 }
 
 .section04__name h2 {
-  font-family: 'OpenSans',sans-serif;
+  font-family: 'OpenSans', sans-serif;
   font-weight: 600;
   font-size: 18px;
 }
 
 .section04__name p {
-  font-family: 'OpenSans',sans-serif;
+  font-family: 'OpenSans', sans-serif;
   font-weight: 600;
   font-size: 13px;
   color: #646464;
@@ -1246,7 +1246,7 @@ i::before {
 
   .section04__headline {
     width: 460px;
-    font-family: "Raleway",sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     color: #1ab798;
     font-size: 28px;
@@ -1300,7 +1300,7 @@ i::before {
 
   .section04__text-1 {
     font-size: 18px;
-    font-family: 'OpenSans',sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-weight: 400;
     color: #282528;
     line-height: 36px;
@@ -1309,7 +1309,7 @@ i::before {
   .section04__text-1::after {
     content: 'nibh tempus,vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id';
     font-size: 18px;
-    font-family: 'OpenSans',sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-weight: 400;
     color: #282528;
     line-height: 36px;
