@@ -284,10 +284,6 @@ ul {
   color: #1ab798;
 }
 
-.header__item2 {
-  position: relative;
-}
-
 .header__burger {
   width: 28px;
   height: 19px;
@@ -313,10 +309,10 @@ ul {
   display: none;
   background-color: #ffffff;
   height: 467px;
-  width: 320px;
+  width: 100%;
   position: absolute;
-  left: -310px;
-  top: 49px;
+  right: 0;
+  top: 101px;
   padding-top: 30px;
 }
 
@@ -507,6 +503,7 @@ ul {
 .section04 {
   width: 320px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .section04__conteiner {
@@ -731,6 +728,11 @@ i::before {
   .container {
     width: 290px;
     margin: 0 auto;
+  }
+
+  .section03__item {
+    width: 270px;
+    display: inline-block;
   }
 
   .section03__title {
@@ -1130,6 +1132,12 @@ i::before {
     margin-right: 0px;
   }
 
+  .header__list3 {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+  }
+
   .header__container {
     width: 708px;
     position: realtive;
@@ -1158,7 +1166,6 @@ i::before {
 
   .header__hidden--item2 {
     display: inline-block;
-    margin-left: 40px;
   }
 
   .header__item2:hover .header__hidden--menu {
@@ -1483,16 +1490,8 @@ i::before {
 }
 
 @media (min-width: 1200px) {
-  .header__item--text:hover {
-    margin-left: -1px;
-  }
-
   .header__container {
     width: 1120px;
-  }
-
-  .header__special--item--text:hover {
-    margin-left: -2px;
   }
 
   .header {
