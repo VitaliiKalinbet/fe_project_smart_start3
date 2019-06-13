@@ -26,6 +26,8 @@
 
     .footer__wrapper {
         background-image: url('../images/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .footer__title {
@@ -162,7 +164,7 @@
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
-        color: $gray;
+        color: #7f7493;
         padding-bottom: 15px;
     }
 
@@ -171,7 +173,7 @@
         margin: 0 auto;
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
-        color: $gray;
+        color: #7f7493;
         position: relative;
         padding-bottom: 50px;
     }
@@ -257,7 +259,7 @@
 @media all and (min-width: 1200px) {
 
     .footer__background {
-        width: 1145px;
+        width: 1120px;
     }
 
     .footer__wrapper{
@@ -274,6 +276,7 @@
 
     .footer__title {
         padding: 70px 0 125px 0;
+        font-weight: 700;
     }
 
     .footer__subtitle {
@@ -327,4 +330,3 @@
         left: 410px;
     }
 }
-

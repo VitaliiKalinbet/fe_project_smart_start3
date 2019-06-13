@@ -105,9 +105,8 @@
     color: #646464;
 }
 
-input{
+.section04__input{
     display:none;
-
 }
 
 label{
@@ -136,11 +135,11 @@ i{
 
 }
 
-input[type="radio"]+i{
+.section04__input+i{
     border-radius: 50%;
 }
 
-input:checked+i::before{
+.section04__input:checked+i::before{
     transform: scale(1);
 }
 
