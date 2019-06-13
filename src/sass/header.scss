@@ -1,15 +1,21 @@
 .header{
     padding-top: 21px;
-    width: 320px;
-    height: 568px;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(../images/header_1img.png);
     position: relative;
     margin-bottom: 173px;
+    padding-bottom: 75px;
+}
+.header__container {
+    width: 290px;
+    margin: 0 auto;
 }
 .header__navigation {
     background-color: $white;
-    width: 320px;
+    background-size: cover;
     height: 80px;
+    margin-bottom: 75px;
 }
 .header__item1 {
     color: $maincolor;
@@ -21,21 +27,20 @@
     display: flex;
     justify-content: space-between;
     padding: 31px 15px 31px 15px;
-    width: 320px;
+    background-size: cover;
+}
+.header__list2 {
+    width: 260px;
 }
 .header__item--text {
     display: none;
 }
-body {
-    width: 320px;
-    margin: 0 auto;
-}
-img {
+.header__img {
     width: 100%;
     height: auto;
     display: block;
 }
-a {
+.header__link {
     text-decoration: none;
     color: $maincolor;
 }
@@ -46,12 +51,13 @@ a {
     width: 28px;
     height: 19px;
     margin-bottom: 31px;
+    margin-left: -38px;
 }
-a:active {
+.header__link:active {
     text-decoration: none;
     color: $maincolor;
 }
-a:hover {
+.header__link:hover {
     text-decoration: none;
     color: $maincolor;
 }
@@ -64,7 +70,7 @@ a:hover {
     height: 467px;
     width: 320px;
     position: absolute;
-    left: -277px;
+    left: -310px;
     top: 49px;
     padding-top: 30px;
 }
@@ -102,7 +108,9 @@ a:hover {
     margin-bottom: 31px; 
 }
 .header__section {
-    padding: 40px 15px;
+    padding: 40px 10px;
+    width: 307px;
+    margin-left: 0;
 }
 .header__text2 {
     display: inline-block;
@@ -139,7 +147,7 @@ a:hover {
     margin-left: 12px;
 }
 .header__button--link:hover {
-    color: $white;
+    color: $white;  
 }
 .header__item--text2 {
     display: none;
@@ -149,20 +157,25 @@ a:hover {
 }
 @media (min-width: 768px) {
     .header {
-        width: 768px;
         background-image: url(../images/header_main2.png);
+        margin-right: 0px;
+    }
+    .header__container {
+        width: 708px;
+        position: realtive;
     }
     .header__navigation {
-        width: 768px;
+        background-size: cover;
     }
     .header__hidden--menu {
-        width: 768px;
-    }
-    body {
-        width: 768px;
+        background-size: cover;
     }
     .header__list {
-        width: 768px;
+        background-size: cover;
+    }
+    .header__section {
+        margin-left: 16px;
+        width: 449px;
     }
     .header__burger {
         display: none;
@@ -175,17 +188,20 @@ a:hover {
         display: none;
     }
     .header__title {
-        font-size: 40px;
+        font-size: 34px;
+    }
+    .header__list2 {
+        width: 350px;
     }
     .header__subtitle {
-        font-size: 20px;
+        font-size: 18px;
         width: 348px;
     }
     .iphones {
         display: block;
         position: relative;
-        right: 0;
-        top: -321px;
+        right: -23px;
+        top: -375px;
     }
     .iphone2 {
         width: 318px;
@@ -206,6 +222,7 @@ a:hover {
         display: block;
         color: #969696;
         font-family: 'Raleway-Light', sans-serif;
+        font-size: 15px;
     }
     .header__item--text2:hover {
         color: #282629;
@@ -215,23 +232,35 @@ a:hover {
     .header__item2:hover .header__item--text2 {
         display: block;
     }
+    .header__list2 {
+        margin-bottom: 79px;
+    }
+    .header__special--text2 {
+        margin-bottom: 0px;
+    }
 }
 @media (min-width: 1200px) {
+    .header__item--text:hover {
+        margin-left: -1px;
+    }
+    .header__container {
+        width: 1120px;
+    }
+    .header__special--item--text:hover {
+        margin-left: -2px;
+    }
     .header {
-        width: 100vw;
         background-image: url(../images/header_main3.png);
+        margin-right: 0;
     }
     .header__navigation {
-        width: 100vw;
+        background-size: cover;
     }
     .header__hidden--menu {
-        width: 100vw;
-    }
-    body {
-        width: 100vw;
+        background-size: cover;
     }
     .header__list {
-        width: 100vw;
+        background-size: cover;
     }
     .header__burger {
         display: none;
@@ -253,8 +282,8 @@ a:hover {
     .iphones {
         display: block;
         position: relative;
-        right: 0;
-        top: -321px;
+        right: 90px;
+        top: -375px;
     }
     .iphone2 {
         width: 318px;
