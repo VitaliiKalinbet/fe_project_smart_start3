@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d build",
     "prepare": "gulp prepare",
     "start": "gulp start",
     "build": "gulp build",
@@ -42,5 +43,8 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "stylelint": "^9.10.1"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
