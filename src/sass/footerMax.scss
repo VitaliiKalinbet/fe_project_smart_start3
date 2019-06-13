@@ -61,7 +61,7 @@
         right: 13px;
     }
 
-    .input1 {
+    .footer__input1{
         width: 270px;
         height: 45px;
         margin: 0 10px 25px;
@@ -69,14 +69,14 @@
         border: none;
     }
 
-    .input1::placeholder {
+    .footer__input1::placeholder {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         color: gray;
         padding: 16px 0 16px 20px;
     }
 
-    .input2 {
+    .footer__input2 {
         width: 270px;
         height: 45px;
         margin: 0 10px 25px;
@@ -84,14 +84,14 @@
         border: none;
     }
 
-    .input2::placeholder {
+    .footer__input2::placeholder {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         color: gray;
         padding: 16px 0 16px 20px;
     }
 
-    .textarea {
+    .footer__textarea {
         width: 270px;
         height: 175px;
         margin: 0 10px 45px;
@@ -99,14 +99,14 @@
         border-radius: 5px;
     }
 
-    .textarea::placeholder {
+    .footer__textarea::placeholder {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         color: $gray;
         padding: 16px 0 0 22px;
     }
 
-    .submit {
+    .footer__submit {
         width: 170px;
         height: 50px;
         background-color: $section3color;
@@ -222,21 +222,21 @@
         left: 190px;
     }
 
-    .input1 {
+    .footer__input1 {
         margin: 0 0 30px 70px;
     }
 
-    .input2 {
+    .footer__input2{
         margin: 0 0 30px 26px;
     }
 
-    .textarea {
+    .footer__textarea {
         width: 570px;
         height: 180px;
         margin: 0 70px 30px;
     }
 
-    .submit {
+    .footer__submit {
         margin: 0 270px;
     }
 
@@ -255,6 +255,7 @@
 }
 
 @media all and (min-width: 1200px) {
+
     .footer__background {
         width: 1145px;
     }
@@ -298,15 +299,15 @@
         text-align: left;
     }
 
-    .input1 {
+    .footer__input1 {
         margin: 0 0 30px 175px;
     }
 
-    .textarea {
+    .footer__textarea {
         margin: 0 0 30px 175px;
     }
 
-    .submit {
+    .footer__submit {
         margin: 0 0 0 575px;
     }
 
