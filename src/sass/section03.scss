@@ -55,13 +55,15 @@
     
     .section__img {
         margin: 0 9px;
+        height: 300px;
+        width: 270px;
     }
 
     .section03__wrapper {
         position: absolute;
         opacity: 0;
-        width: 273px;
-        height: 303px;
+        width: 270px;
+        height: 300px;
         top: 0;
         left: 9px;
         transition: all 350ms ease-in-out;
