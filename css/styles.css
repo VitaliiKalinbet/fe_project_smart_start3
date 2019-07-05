@@ -1794,8 +1794,8 @@ i::before {
   }
 
   .footer__text--mail::after {
-    width: 1440px;
-    left: -148px;
+    width: 1170px;
+    left: 0;
     top: 160px;
   }
 
